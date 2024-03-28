@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food App</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-500"> 
+  <nav class="bg-purple-900 text-white md:flex justify-between items-center px-4 py-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-xl font-bold">Food App</a>
+        <div class="flex items-center space-x-6">
+        <input type="text" id="searchInput" class="form-input border-gray-300 rounded-md focus:ring focus:ring-gray-200 focus:border-gray-400 text-gray-800 placeholder-gray-500" placeholder="Search for food...">
+        <a href="cart.html" class="nav-item md:flex">Cart</a>
+        <a href="wishlist.html" class="nav-item">Wishlist</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mx-auto mt-8">
+    <div id="foodList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

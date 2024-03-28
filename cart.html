@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+  <div class="container mx-auto mt-5">
+    <h1 class="text-3xl bg-purple-900 font-semibold mb-2 items-start">Shopping Cart</h1>
+    <div id="cartItems"></div>
+    <div class="bg-red-400 rounded-md shadow-md p-4 mt-4">
+      <div class="flex justify-between items-center">
+        <h5 class="text-lg font-semibold text-white">Total Price: <span id="totalPrice" class="text-white">$0</span></h5>
+        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
